@@ -12,7 +12,7 @@ class Post(models.Model):
     title = models.CharField(max_length=50, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='posts') # Das Löschen muss getestet werden.
-    short_description = models.TextField(max_length=500)
+    short_description = models.TextField(max_length=150)
     content = models.TextField()
     img = models.ImageField()
     category = models.CharField(max_length=50)
@@ -25,3 +25,14 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+#class exchange_rate(models.Model):
+ #   USD$ =models.
+  #  EURO€ =
+    #POUND£
+    #INDIAN Rs.
+   # PAKISTAN Rs.
+    #IRAN Toman
+    #CNY¥
+   # UAE DIRHAM
+    #SAUDI RIYAL
