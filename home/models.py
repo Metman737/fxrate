@@ -26,8 +26,26 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-#class exchange_rate(models.Model):
- #   USD$ =models.
+
+class Currency(models.Model):
+    name = models.CharField(max_length=50, unique=True)
+    token = models.CharField(max_length=5, unique=True)
+    symbol = models.CharField(max_length=5, unique=True)
+
+    def __str__(self):
+        return self.name
+
+
+class ExchangeRate(models.Model):
+    currency = models.ForeignKey(Currency, on_delete=models.CASCADE, related_name='currency')
+    rate = models.DecimalField(max_digits=10, decimal_places=2)
+    change = models.DecimalField(max_digits=6, decimal_places=2)
+    change_date = models.DateField(auto_now_add=True)
+    change_time = models.TimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.currency.name
+
   #  EURO€ =
     #POUND£
     #INDIAN Rs.
