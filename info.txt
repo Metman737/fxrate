@@ -16,3 +16,10 @@ https://github.com/suhailvs/django-schools
 <p dir="rtl">چپچین و مناسب زبان فارسی</p>
 
 https://mdbootstrap.com/plugins/jquery/extended-cards/
+
+
+
+python3 manage.py runserver
+python3 manage.py createsuperuser
+python3 manage.py migrate
+
