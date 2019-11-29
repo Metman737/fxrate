@@ -9,5 +9,5 @@ def index(request):
 
 
 def table_detail(request):
-    exchengerates = ExchangeRate
+    exchengerates = ExchangeRate.objects.all()
     return render(request, 'home/exchangerate_detail.html', {'exchangerates': exchengerates})
