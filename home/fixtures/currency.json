@@ -1,0 +1,38 @@
+[
+{
+     "model": "home.currency",
+     "pk": 1,
+     "fields": {
+          "name": "Euro",
+          "token": "EUR",
+          "symbol": "\u20ac"
+     }
+},
+{
+     "model": "home.currency",
+     "pk": 2,
+     "fields": {
+          "name": "US-Dollar",
+          "token": "USD",
+          "symbol": "$"
+     }
+},
+{
+     "model": "home.currency",
+     "pk": 3,
+     "fields": {
+          "name": "Yen",
+          "token": "JPY",
+          "symbol": "\u00a5"
+     }
+},
+{
+     "model": "home.currency",
+     "pk": 4,
+     "fields": {
+          "name": "Pfund Sterling",
+          "token": "GBP",
+          "symbol": "\u00a3"
+     }
+}
+]
