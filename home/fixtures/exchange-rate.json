@@ -1,0 +1,46 @@
+[
+{
+     "model": "home.exchangerate",
+     "pk": 1,
+     "fields": {
+          "currency": 1,
+          "rate": "86.38",
+          "change": "1.06",
+          "change_date": "2019-12-01",
+          "change_time": "18:20:49.360"
+     }
+},
+{
+     "model": "home.exchangerate",
+     "pk": 2,
+     "fields": {
+          "currency": 2,
+          "rate": "78.40",
+          "change": "0.56",
+          "change_date": "2019-12-01",
+          "change_time": "18:21:18.203"
+     }
+},
+{
+     "model": "home.exchangerate",
+     "pk": 3,
+     "fields": {
+          "currency": 3,
+          "rate": "0.72",
+          "change": "-0.11",
+          "change_date": "2019-12-01",
+          "change_time": "18:22:50.076"
+     }
+},
+{
+     "model": "home.exchangerate",
+     "pk": 4,
+     "fields": {
+          "currency": 4,
+          "rate": "101.35",
+          "change": "0.16",
+          "change_date": "2019-12-01",
+          "change_time": "18:24:17.667"
+     }
+}
+]

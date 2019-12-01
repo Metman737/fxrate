@@ -1,6 +1,13 @@
 # fxrate
 
-### How to load test data into the database
+## Create fixture out of database data 
+
+Clear old data from databse:
+```
+python3 manage.py dumpdata app.model --indent 5 > name.json
+```
+
+## Load test data into the database
 
 Clear old data from databse:
 ```
@@ -16,4 +23,16 @@ Make sure you have loaded the user fixtures properly than, load fixtures for pos
 ```
 python3 manage.py loaddata home/fixtures/post.json
 ```
-You will now have test data in your database.
+You will now have test posts in your database.
+
+Insert 4 images into the media folder named like:
+- fixture1.jpg 
+- fixture2.jpg 
+- fixture3.jpg 
+- fixture4.jpg 
+
+For currency exchange table do the following: 
+```
+python3 manage.py loaddata home/fixtures/currency.json
+python3 manage.py loaddata home/fixtures/exchange-rate.json
+```
