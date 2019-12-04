@@ -1,0 +1,25 @@
+{% extends 'home/base.html' %}
+{% block content %}
+ <div class="card-body">
+     <table style="width: 100%;" id="example2" class="table table-hover table-striped table-bordered">
+         <thead>
+         <tr>
+            <th>currency</th>
+            <th>rate</th>
+            <th>change</th>
+            <th>change_time</th>
+            <th>change_date</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for exchangerate in exchangerates  %}
+        <tr>
+            <td>{{ exchangerate.currency.name }}</td>
+            <td>{{ exchangerate.rate }}</td>
+            <td>{{ exchangerate.change }}</td>
+            <td>{{ exchangerate.change_time }}</td>
+            <td>{{ exchangerate.change_date }}</td>
+        </tr>
+        {% endfor %}
+
+{% endblock content %}
