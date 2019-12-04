@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.views.generic import DetailView
+
 from home.models import Post, ExchangeRate
 
 
@@ -11,3 +13,7 @@ def index(request):
 def table_detail(request):
     exchengerates = ExchangeRate.objects.all()
     return render(request, 'home/exchangerate_detail.html', {'exchangerates': exchengerates})
+
+
+class PostAsDatail(DetailView):
+    model = Post
