@@ -2,7 +2,7 @@
 
 ## Create fixture out of database data 
 
-Clear old data from databse:
+Load data from database into a fixture:
 ```
 python3 manage.py dumpdata app.model --indent 5 > name.json
 ```
