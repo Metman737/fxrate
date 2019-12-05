@@ -1,5 +1,9 @@
 # fxrate
 
+## ToDo:
+
+- https://simpleit.rocks/python/django/generating-slugs-automatically-in-django-easy-solid-approaches/
+
 ## Create fixture out of database data 
 
 Load data from database into a fixture:
@@ -21,7 +25,7 @@ python3 manage.py loaddata home/fixtures/users.json
 
 Make sure you have loaded the user fixtures properly than, load fixtures for post table:
 ```
-python3 manage.py loaddata home/fixtures/post.json
+python3 manage.py loaddata home/fixtures/posts.json
 ```
 You will now have test posts in your database.
 

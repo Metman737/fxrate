@@ -1,19 +1,19 @@
 from django.shortcuts import render
-from django.views.generic import DetailView
+from django.views.generic import DetailView, ListView
 
 from home.models import Post, ExchangeRate
 
 
-# Create your views here.
-def index(request):
-    posts = Post.objects.filter(status=1).order_by('-creation_date')
-    return render(request, 'home/index.html', {'posts': posts})
+class ExchangeRateTable(ListView):
+    queryset = ExchangeRate.objects.all()
+    template_name = 'home/exchange_rate_table.html'
 
 
-def table_detail(request):
-    exchengerates = ExchangeRate.objects.all()
-    return render(request, 'home/exchangerate_detail.html', {'exchangerates': exchengerates})
+class PostList(ListView):
+    queryset = Post.objects.filter(status=1).order_by('creation_date')
+    template_name = 'home/homepage.html'
 
 
-class PostAsDatail(DetailView):
+class PostDetail(DetailView):
     model = Post
+    template_name = 'home/post_detail.html'

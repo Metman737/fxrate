@@ -12,7 +12,7 @@
         </tr>
         </thead>
         <tbody>
-        {% for exchangerate in exchangerates  %}
+        {% for exchangerate in exchangerate_list  %}
         <tr>
             <td>{{ exchangerate.currency.name }}</td>
             <td>{{ exchangerate.rate }}</td>
