@@ -10,7 +10,7 @@ class ExchangeRateTable(ListView):
 
 
 class PostList(ListView):
-    queryset = Post.objects.filter(status=1).order_by('creation_date')
+    queryset = Post.objects.filter(status=1).order_by('creation_date')[:4]
     template_name = 'home/homepage.html'
 
 
