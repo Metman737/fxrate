@@ -10,12 +10,12 @@
                     <div class="float-right">
                       <strong class="d-inline-block mb-2 text-primary">{{ post.title }}</strong>
                       <p class="card-text mb-auto">{{ post.short_description }}</p>
-                      <a href="/home/{{ post.slug }}" class="stretched-link">Continue reading</a>
+                      <a href="{% url 'home:post_detail' post.slug|slugify %}" class="stretched-link">Continue reading</a>
                       <div class="mb-1 text-muted">{{ post.edit_date }}</div>
                      </div>
                   </div>
                   <div class="col-auto d-none d-lg-block">
-                    <img src="{{ post.img.url }}" width="200" height="250">
+                    <img src="{{ post.img.url }}"  width="200" height="250">
                   </div>
             </div>
         </div>
