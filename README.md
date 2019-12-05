@@ -4,6 +4,10 @@
 
 - https://simpleit.rocks/python/django/generating-slugs-automatically-in-django-easy-solid-approaches/
 
+## ToRead:
+
+- https://realpython.com/django-redirects/#django-redirects-a-super-simple-example
+
 ## Create fixture out of database data 
 
 Load data from database into a fixture:
