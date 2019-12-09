@@ -28,29 +28,21 @@ class Post(models.Model):
 
 
 class Currency(models.Model):
-    name = models.CharField(max_length=50, unique=True)
-    token = models.CharField(max_length=5, unique=True)
-    symbol = models.CharField(max_length=5, unique=True)
+    country = models.CharField(max_length=50, unique=True)
+    iso = models.CharField(max_length=5, unique=True)
+    designation = models.CharField(max_length=5, null=True)
+    symbol = models.CharField(max_length=5, null=True)
+    flag = models.CharField(max_length=1, null=True)
 
     def __str__(self):
-        return self.name
+        return self.country + self.iso
 
 
 class ExchangeRate(models.Model):
     currency = models.ForeignKey(Currency, on_delete=models.CASCADE, related_name='currency')
-    rate = models.DecimalField(max_digits=10, decimal_places=2)
-    change = models.DecimalField(max_digits=6, decimal_places=2)
-    change_date = models.DateField(auto_now_add=True)
-    change_time = models.TimeField(auto_now_add=True)
+    buy = models.DecimalField(max_digits=10, decimal_places=2, null=True)
+    sell = models.DecimalField(max_digits=10, decimal_places=2, null=True)
+    change_date_time = models.DateTimeField(auto_now_add=True, null=True)
 
     def __str__(self):
-        return self.currency.name
-
-  #  EURO€ =
-    #POUND£
-    #INDIAN Rs.
-   # PAKISTAN Rs.
-    #IRAN Toman
-    #CNY¥
-   # UAE DIRHAM
-    #SAUDI RIYAL
+        return self.currency.iso + str(self.change_date_time)

@@ -4,43 +4,59 @@
      "pk": 1,
      "fields": {
           "currency": 1,
-          "rate": "86.38",
-          "change": "1.06",
-          "change_date": "2019-12-01",
-          "change_time": "18:20:49.360"
+          "buy": "86.38",
+          "sell": "85.38",
+          "change_date_time": "2019-11-26 12:31:23.419+01:00"
      }
 },
 {
      "model": "home.exchangerate",
      "pk": 2,
      "fields": {
-          "currency": 2,
-          "rate": "78.40",
-          "change": "0.56",
-          "change_date": "2019-12-01",
-          "change_time": "18:21:18.203"
+          "currency": 1,
+          "buy": "85.38",
+          "sell": "84.38",
+          "change_date_time": "2019-11-26 11:31:23.419+01:00"
      }
 },
 {
      "model": "home.exchangerate",
      "pk": 3,
      "fields": {
-          "currency": 3,
-          "rate": "0.72",
-          "change": "-0.11",
-          "change_date": "2019-12-01",
-          "change_time": "18:22:50.076"
+          "currency": 1,
+          "buy": "87.38",
+          "sell": "86.38",
+          "change_date_time": "2019-11-27 11:31:23.419+01:00"
      }
 },
 {
      "model": "home.exchangerate",
      "pk": 4,
      "fields": {
+          "currency": 2,
+          "buy": "78.40",
+          "sell": "77.38",
+          "change_date_time": "2019-11-26 12:31:23.419+01:00"
+     }
+},
+{
+     "model": "home.exchangerate",
+     "pk": 5,
+     "fields": {
+          "currency": 3,
+          "buy": "0.72",
+          "sell": "0.51",
+          "change_date_time": "2019-11-26 12:31:23.419+01:00"
+     }
+},
+{
+     "model": "home.exchangerate",
+     "pk": 5,
+     "fields": {
           "currency": 4,
-          "rate": "101.35",
-          "change": "0.16",
-          "change_date": "2019-12-01",
-          "change_time": "18:24:17.667"
+          "buy": "101.35",
+          "sell": "85.38",
+          "change_date_time": "2019-11-26 12:31:23.419+01:00"
      }
 }
 ]
