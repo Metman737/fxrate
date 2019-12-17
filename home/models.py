@@ -35,7 +35,7 @@ class Currency(models.Model):
     flag = models.CharField(max_length=1, null=True)
 
     def __str__(self):
-        return self.country + self.iso
+        return "Currency of -- {} -- {}".format(self.country,  self.iso)
 
 
 class ExchangeRate(models.Model):
@@ -45,4 +45,4 @@ class ExchangeRate(models.Model):
     change_date_time = models.DateTimeField(auto_now_add=True, null=True)
 
     def __str__(self):
-        return self.currency.iso + str(self.change_date_time)
+        return "Exchange rate of -- {} -- on date: {}".format(self.currency.iso, str(self.change_date_time))
