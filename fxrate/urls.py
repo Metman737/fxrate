@@ -3,12 +3,12 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static
 
-import home
-from .views import redirect_home
+from fxrate.views import Homepage
 
 urlpatterns = [
-    path('home/', include('home.urls')),
+    path('blog/', include('blog.urls')),
+    path('exchange/', include('exchange.urls')),
+    path('', Homepage.as_view(), name="homepage"),
     path('admin/', admin.site.urls),
-    path('', redirect_home),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \
               + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

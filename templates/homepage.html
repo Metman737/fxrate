@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% load static %}
+{% block stylesheets %}<link href="{% static "css/homepage.css" %}" rel="stylesheet">{% endblock %}
+{% block content %}
+
+    <!-- Tabels -->
+
+
+    <!-- Post Cards -->
+
+    <div class="row mb-2">
+    {% for post in post_list %}
+    <div class="col-md-6">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <div class="float-right">
+                  <strong class="d-inline-block mb-2 text-primary">{{ post.title }}</strong>
+                  <p class="card-text mb-auto">{{ post.short_description }}</p>
+                  <a href="{% url 'blog:post-detail' post.slug %}" class="stretched-link">Continue reading</a>
+                  <div class="mb-1 text-muted">{{ post.edit_date }}</div>
+                 </div>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="{{ post.img.url }}"  width="200" height="250">
+              </div>
+        </div>
+    </div>
+    {% endfor %}
+    </div>
+
+    <div class="row">
+
+        <!-- Featured Article -->
+        <main class="col-lg-8 ">
+            <h2>Featured</h2><hr>
+            {% lorem 7 p random %}
+        </main>
+
+        <!-- Featured Article -->
+        <aside class="col-lg-4">
+          <div class="p-4 mb-3 bg-light rounded">
+           <h5 >Tabelle</h5>
+           <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">ارز خارجی</th>
+                <th scope="col">خرید</th>
+                <th scope="col">فروش</th>
+              </tr>
+            </thead>
+           <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>یک دالر</td>
+              <td>78.0663 افغانی</td>
+              <td>78.2663  افغانی</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>یک پوند انگلیس</td>
+              <td>99.5400 افغانی</td>
+              <td>100.3400 افغانی</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>یک یورو</td>
+              <td>86.1900 افغانی</td>
+              <td>86.7900 افغانی</td>
+            </tr>
+            </tbody>
+          </table>
+          </div>
+        </aside>
+    </div>
+{% endblock %}
+

@@ -1,6 +1,9 @@
 from django.shortcuts import redirect
+from django.views.generic import ListView
+
+from blog.models import Post
 
 
-def redirect_home(request):
-    response = redirect('home:homepage')
-    return response
+class Homepage(ListView):
+    queryset = Post.objects.filter(status=1).order_by('creation_date')[:4]
+    template_name = 'homepage.html'
