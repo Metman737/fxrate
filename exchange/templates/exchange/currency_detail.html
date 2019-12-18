@@ -1,11 +1,14 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
 
 <div class="my-5">
 
     {% if currency %}
-        <h2>{{ currency.designation}}</h2><hr>
+        <ul class="list-inline">
+            <li class="list-inline-item "><span class="h2"> {{ currency.country}} {{ currency.flag}}</span></li>
+            <li class="list-inline-item float-right"><span class="h2">{{ currency.designation}} {{ currency.symbol}}</span></li>
+        </ul>
     {% else %}
         <h2>Währung nicht gefunden: {{ slug }}</h2><hr>
     {% endif %}
@@ -15,10 +18,6 @@
 
         <thead>
             <tr>
-                <th>🏳️</th>
-    {#            <th class="d-none d-sm-table-cell">&#x00A4</th>#}
-                <th class="d-none d-sm-table-cell">Currency &#x00A4</th>
-                <th class="d-table-cell d-sm-none">ISO</th>
                 <th>Buy</th>
                 <th>Sell</th>
                 <th class="d-none d-sm-table-cell">Date</th>
@@ -28,10 +27,6 @@
         <tbody>
             {% for exchangerate in exchangerate_list  %}
             <tr>
-                <td style="width: 1em">{{ exchangerate.currency.flag }}</td>
-    {#            <td class="d-none d-sm-table-cell" >{{ exchangerate.currency.symbol }}</td>#}
-                <td class="d-none d-sm-table-cell">{{ exchangerate.currency.designation }} {{ exchangerate.currency.symbol }}</td>
-                <td class="d-table-cell d-sm-none">{{ exchangerate.currency.iso }} {{ exchangerate.currency.symbol }}</td>
                 <td>{{ exchangerate.buy }}</td>
                 <td>{{ exchangerate.sell }}</td>
                 <td class="d-none d-sm-table-cell">{{ exchangerate.change_date_time }}</td>
