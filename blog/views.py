@@ -5,7 +5,3 @@ from blog.models import Post
 class PostDetail(DetailView):
     model = Post
     template_name = 'blog/post_detail.html'
-
-
-class ExchangeRateOverview( object ):
-    pass
