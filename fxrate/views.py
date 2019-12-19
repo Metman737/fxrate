@@ -10,11 +10,11 @@ class Homepage(ListView):
     template_name = 'homepage.html'
 
     def get_context_data(self, **kwargs):
-        context = super().get_context_data( **kwargs )
+        context = super().get_context_data(**kwargs)
         context['exchangerate_list'] = ExchangeRate.objects.raw('''SELECT c.*, e1.*
-    FROM home_currency c
-    JOIN home_exchangerate e1 ON (c.id = e1.currency_id)
-    LEFT OUTER JOIN home_exchangerate e2 ON (c.id = e2.currency_id AND 
+    FROM exchange_currency c
+    JOIN exchange_exchangerate e1 ON (c.id = e1.currency_id)
+    LEFT OUTER JOIN exchange_exchangerate e2 ON (c.id = e2.currency_id AND
         (e1.change_date_time < e2.change_date_time OR (e1.change_date_time = e2.change_date_time AND e1.id < e2.id)))
     WHERE e2.id IS NULL''')
         return context
