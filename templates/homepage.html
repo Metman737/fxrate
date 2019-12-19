@@ -26,7 +26,13 @@
             <td class="d-table-cell d-sm-none">{{ exchangerate.currency.iso }} {{ exchangerate.currency.symbol }}</td>
             <td>{{ exchangerate.buy }}</td>
             <td>{{ exchangerate.sell }}</td>
-            <td class="d-none d-sm-table-cell">{{ exchangerate.change_date_time }}</td>
+            <td class="d-none d-sm-table-cell">
+                {% if exchangerate.is_today %}
+                    Today, {{ exchangerate.change_date_time|date:"P"}}
+                {% else %}
+                    {{ exchangerate.change_date_time }}
+                {% endif %}
+            </td>
         </tr>
         {% endfor %}
         </tbody>
