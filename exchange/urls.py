@@ -4,5 +4,6 @@ from exchange import views
 
 app_name = 'exchange'
 urlpatterns = [
-    path('overview/', views.ExchangeRateOverview.as_view(), name='overview'),
+    path('', views.ExchangeRateOverview.as_view(), name='overview'),
+    path('<slug:slug>/', views.CurrencyDetail.as_view(), name='currency_detail')
 ]

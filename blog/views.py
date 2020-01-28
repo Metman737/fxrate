@@ -1,4 +1,4 @@
-from django.views.generic import DetailView
+from django.views.generic import DetailView, ListView
 from blog.models import Post
 
 
@@ -7,5 +7,6 @@ class PostDetail(DetailView):
     template_name = 'blog/post_detail.html'
 
 
-class ExchangeRateOverview( object ):
-    pass
+class PostList(ListView):
+    queryset = Post.objects.all()
+    template_name = 'blog/post_list.html'

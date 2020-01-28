@@ -1,4 +1,5 @@
 from django.db import models
+from datetime import date
 
 
 class Currency(models.Model):
@@ -21,3 +22,6 @@ class ExchangeRate(models.Model):
     def __str__(self):
         return "Exchange rate of -- {} -- on date: {}".format(self.currency.iso, str(self.change_date_time))
 
+    @property
+    def is_today(self):
+        return date.today() == self.change_date_time.date()
