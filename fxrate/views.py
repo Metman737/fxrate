@@ -6,7 +6,7 @@ from exchange.models import ExchangeRate
 
 
 class Homepage(ListView):
-    queryset = Post.objects.filter(status=1).order_by('creation_date')[:4]
+    queryset = Post.objects.filter(status=1).order_by('creation_date')[:2]
     template_name = 'homepage.html'
 
     def get_context_data(self, **kwargs):
