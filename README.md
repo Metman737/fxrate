@@ -3,6 +3,13 @@
 ## ToDo:
 
 - https://simpleit.rocks/python/django/generating-slugs-automatically-in-django-easy-solid-approaches/
+- Homepage Währungstabelle nur 6 Reihen anzeigen
+- Homepage 3 Posts nebeneinander
+- Sprache Übersetzungen
+- Durchschnitt von Währung errechnen und anzeigen 
+- Windows flagge anzeigen
+- Link zu anderen Websites
+ 
 
 ## ToRead:
 
