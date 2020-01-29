@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-29 14:15+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: fxrate/settings.py:111 fxrate/settings_git.py:111
+msgid "English"
+msgstr ""
+
+#: fxrate/settings.py:112 fxrate/settings_git.py:112
+msgid "German"
+msgstr ""
+
+#: fxrate/settings.py:113
+msgid "Persian"
+msgstr ""
+
+#: fxrate/settings_git.py:113
+msgid "Dari"
+msgstr ""
+
+#: templates/base.html:25 templates/base.html:46
+msgid "Financial Market"
+msgstr ""
+
+#: templates/base.html:48
+msgid "Home"
+msgstr ""
+
+#: templates/base.html:49
+msgid "News"
+msgstr ""
+
+#: templates/base.html:50
+msgid "Exchange Table"
+msgstr ""
+
+#: templates/base.html:87
+msgid "About"
+msgstr ""
+
+#: templates/base.html:90
+msgid "Contact"
+msgstr ""
+
+#: templates/base.html:93
+msgid "Terms"
+msgstr ""
+
+#: templates/base.html:96
+msgid "Cookies"
+msgstr ""
+
+#: templates/base.html:99
+msgid "Back to top"
+msgstr ""
