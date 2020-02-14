@@ -18,8 +18,8 @@
 
         <thead>
             <tr>
-                <th>Buy</th>
                 <th>Sell</th>
+                <th>Buy</th>
                 <th class="d-none d-sm-table-cell">Date</th>
             </tr>
         </thead>
@@ -27,8 +27,8 @@
         <tbody>
             {% for exchangerate in exchangerate_list  %}
             <tr>
-                <td>{{ exchangerate.buy }}</td>
                 <td>{{ exchangerate.sell }}</td>
+                <td>{{ exchangerate.buy }}</td>
                 <td class="d-none d-sm-table-cell">
                     {% if exchangerate.is_today %}
                         Today, {{ exchangerate.change_date_time|date:"P"}}
