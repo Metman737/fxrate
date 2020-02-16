@@ -51,3 +51,8 @@ For currency exchange table do the following:
 python3 manage.py loaddata exchange/fixtures/currency.json
 python3 manage.py loaddata exchange/fixtures/exchange-rate.json
 ```
+
+## Make languages available 
+```
+python3 manage.py compilemessages
+```

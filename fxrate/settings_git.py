@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
-    'exchange.apps.ExchangeConfig'
+    'exchange.apps.ExchangeConfig',
+
 ]
 
 MIDDLEWARE = [
@@ -110,10 +112,11 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGES = (
     ('en', _('English')),
     ('de', _('German')),
-    ('fa', _('Dari')),
+    ('fa', _('Persian')),
 )
 
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = 'fa'
+MODELTRANSLATION_LANGUAGES = ('fa', 'en')
 
 TIME_ZONE = 'UTC'
 
