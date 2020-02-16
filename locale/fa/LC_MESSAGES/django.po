@@ -36,19 +36,19 @@ msgstr ""
 
 #: templates/base.html:25 templates/base.html:46
 msgid "Financial Market"
-msgstr ""
+msgstr "تحلیل بازار مالی - نرخ اسعار سرای شهزاده"
 
 #: templates/base.html:48
 msgid "Home"
-msgstr ""
+msgstr "خانه"
 
 #: templates/base.html:49
 msgid "News"
-msgstr ""
+msgstr "اخبار"
 
 #: templates/base.html:50
 msgid "Exchange Table"
-msgstr ""
+msgstr "نرخ اسعار"
 
 #: templates/base.html:87
 msgid "About"
