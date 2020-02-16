@@ -2,6 +2,7 @@
 fxrate/settings.py
 media/*
 .idea/*
+venv/*
 
 
 # Created by https://www.gitignore.io
