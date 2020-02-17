@@ -1,21 +1,22 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 {% block stylesheets %}<link href="{% static "css/homepage.css" %}" rel="stylesheet">{% endblock %}
 {% block content %}
 
     <!-- Tabels -->
 
     <div class="mb-5">
-    <h2>Wechselkurse</h2><hr>
+    <h2>{% trans 'Exchange Rates' %}</h2><hr>
     <table class="table table-hover table-striped table-bordered w-100">
         <thead>
         <tr>
             <th>🏳️</th>
-            <th class="d-none d-sm-table-cell">Currency &#x00A4</th>
+            <th class="d-none d-sm-table-cell">{% trans 'Currency' %}&#x00A4</th>
             <th class="d-table-cell d-sm-none">ISO</th>
-            <th>Sell</th>
-            <th>Buy</th>
-            <th class="d-none d-sm-table-cell">Date</th>
+            <th>{% trans 'Sell' %}</th>
+            <th>{% trans 'Buy' %}</th>
+            <th class="d-none d-sm-table-cell">{% trans 'Date' %}</th>
         </tr>
         </thead>
         <tbody>
@@ -42,7 +43,7 @@
 
     <!-- Blog Cards -->
 
-    <h2>Neuigkeiten</h2><hr>
+    <h2>{% trans 'News' %}</h2><hr>
     <div class="row mb-5">
     {% for post in post_list %}
     <div class="col-md-6">

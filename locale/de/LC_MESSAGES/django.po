@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-17 19:22+0100\n"
+"POT-Creation-Date: 2020-02-17 21:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,13 +18,28 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: exchange/templates/exchange/currency_detail.html:22
+#: blog/templates/blog/post_list.html:7
+msgid "All News"
+msgstr ""
+
+#: exchange/templates/exchange/currency_detail.html:21
+#: exchange/templates/exchange/overview.html:18 templates/homepage.html:17
 msgid "Sell"
 msgstr "Verkaufen"
 
-#: exchange/templates/exchange/currency_detail.html:23
+#: exchange/templates/exchange/currency_detail.html:22
+#: exchange/templates/exchange/overview.html:19 templates/homepage.html:18
 msgid "Buy"
 msgstr "Kaufen"
+
+#: exchange/templates/exchange/currency_detail.html:23
+#: exchange/templates/exchange/overview.html:20 templates/homepage.html:19
+msgid "Date"
+msgstr ""
+
+#: exchange/templates/exchange/overview.html:16 templates/homepage.html:15
+msgid "Currency"
+msgstr ""
 
 #: fxrate/settings.py:113 fxrate/settings_git.py:113
 msgid "English"
@@ -38,38 +53,42 @@ msgstr ""
 msgid "Persian"
 msgstr ""
 
-#: templates/base.html:25 templates/base.html:46
+#: templates/base.html:24 templates/base.html:45
 msgid "Financial Market"
 msgstr ""
 
-#: templates/base.html:48
+#: templates/base.html:47
 msgid "Home"
 msgstr ""
 
-#: templates/base.html:49
+#: templates/base.html:48 templates/homepage.html:46
 msgid "News"
 msgstr ""
 
-#: templates/base.html:50
+#: templates/base.html:49
 msgid "Exchange Table"
 msgstr ""
 
-#: templates/base.html:87
+#: templates/base.html:85
 msgid "About"
 msgstr ""
 
-#: templates/base.html:90
+#: templates/base.html:88
 msgid "Contact"
 msgstr ""
 
-#: templates/base.html:93
+#: templates/base.html:91
 msgid "Terms"
 msgstr ""
 
-#: templates/base.html:96
+#: templates/base.html:94
 msgid "Cookies"
 msgstr ""
 
-#: templates/base.html:99
+#: templates/base.html:97
 msgid "Back to top"
+msgstr ""
+
+#: templates/homepage.html:10
+msgid "Exchange Rates"
 msgstr ""

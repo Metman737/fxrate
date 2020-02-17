@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
-
+{% load i18n %}
 {% block content %}
 
 <div class="mb-5">
 
 
-    <h2>All Currencies</h2><hr>
+    <h2>{% trans 'Exchange Rates' %}</h2><hr>
 
 
     <table class="table table-hover table-striped table-bordered w-100">
@@ -13,11 +13,12 @@
         <tr>
             <th>🏳️</th>
 {#            <th class="d-none d-sm-table-cell">&#x00A4</th>#}
-            <th class="d-none d-sm-table-cell">Currency &#x00A4</th>
+            <th class="d-none d-sm-table-cell">{% trans 'Currency' %}&#x00A4</th>
             <th class="d-table-cell d-sm-none">ISO</th>
-            <th>Sell</th>
-            <th>Buy</th>
-            <th class="d-none d-sm-table-cell">Date</th>
+            <th>{% trans 'Sell' %}</th>
+            <th>{% trans 'Buy' %}</th>
+            <th class="d-none d-sm-table-cell">{% trans 'Date' %}</th>
+
         </tr>
         </thead>
         <tbody>

@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
+{% load i18n %}
 {% block content %}
 
     <!-- Blog Cards -->
 
-    <h2>Neuigkeiten</h2><hr>
+    <h2>{% trans 'All News' %}</h2><hr>
     <div class="row mb-5">
     {% for post in post_list %}
     <div class="col-md-6">
