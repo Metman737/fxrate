@@ -53,6 +53,14 @@ python3 manage.py loaddata exchange/fixtures/exchange-rate.json
 ```
 
 ## Make languages available 
+
+To make translation files
 ```
-python3 manage.py compilemessages
+django-admin makemessages --ignore venv  
+```
+
+To make changes in translations files available
+```
+msgfmt -o locale/de/LC_MESSAGES/django.mo locale/de/LC_MESSAGES/django.po
+msgfmt -o locale/fa/LC_MESSAGES/django.mo locale/fa/LC_MESSAGES/django.po
 ```

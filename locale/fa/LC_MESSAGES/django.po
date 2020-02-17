@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-29 14:17+0000\n"
+"POT-Creation-Date: 2020-02-17 19:22+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,20 +18,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: fxrate/settings.py:111 fxrate/settings_git.py:111
+#: exchange/templates/exchange/currency_detail.html:22
+msgid "Sell"
+msgstr ""
+
+#: exchange/templates/exchange/currency_detail.html:23
+msgid "Buy"
+msgstr ""
+
+#: fxrate/settings.py:113 fxrate/settings_git.py:113
 msgid "English"
 msgstr ""
 
-#: fxrate/settings.py:112 fxrate/settings_git.py:112
+#: fxrate/settings.py:114 fxrate/settings_git.py:114
 msgid "German"
 msgstr ""
 
-#: fxrate/settings.py:113
+#: fxrate/settings.py:115 fxrate/settings_git.py:115
 msgid "Persian"
-msgstr ""
-
-#: fxrate/settings_git.py:113
-msgid "Dari"
 msgstr ""
 
 #: templates/base.html:25 templates/base.html:46
