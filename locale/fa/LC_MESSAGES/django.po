@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-17 21:50+0100\n"
+"POT-Creation-Date: 2020-02-24 23:05+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,26 +18,47 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+#: blog/templates/blog/post_detail.html:8
+msgid "writen by"
+msgstr "نوشته‌شده توسط "
+
 #: blog/templates/blog/post_list.html:7
 msgid "All News"
 msgstr "همه اخبار"
 
-#: exchange/templates/exchange/currency_detail.html:21
-#: exchange/templates/exchange/overview.html:18 templates/homepage.html:17
+#: blog/templates/blog/post_list.html:16 templates/homepage.html:55
+msgid "Continue reading"
+msgstr "ادامه مطلب"
+
+#: exchange/templates/exchange/currency_detail.html:44
+msgid "All price updates"
+msgstr "همه بروز رسانی های قیمت"
+
+#: exchange/templates/exchange/currency_detail.html:55
+#: exchange/templates/exchange/overview.html:19 templates/homepage.html:17
 msgid "Sell"
 msgstr "خرید"
 
-#: exchange/templates/exchange/currency_detail.html:22
-#: exchange/templates/exchange/overview.html:19 templates/homepage.html:18
+#: exchange/templates/exchange/currency_detail.html:56
+#: exchange/templates/exchange/overview.html:20 templates/homepage.html:18
 msgid "Buy"
 msgstr "فروش"
 
-#: exchange/templates/exchange/currency_detail.html:23
-#: exchange/templates/exchange/overview.html:20 templates/homepage.html:19
+#: exchange/templates/exchange/currency_detail.html:57
+#: exchange/templates/exchange/overview.html:21 templates/homepage.html:19
 msgid "Date"
 msgstr "زمان"
 
-#: exchange/templates/exchange/overview.html:16 templates/homepage.html:15
+#: exchange/templates/exchange/currency_detail.html:68
+#: exchange/templates/exchange/overview.html:36 templates/homepage.html:32
+msgid "Today"
+msgstr "امروز"
+
+#: exchange/templates/exchange/overview.html:9 templates/homepage.html:10
+msgid "Exchange Rates"
+msgstr "نرخ اسعار"
+
+#: exchange/templates/exchange/overview.html:17 templates/homepage.html:15
 msgid "Currency"
 msgstr "ارز خارجی"
 
@@ -88,9 +109,3 @@ msgstr ""
 #: templates/base.html:97
 msgid "Back to top"
 msgstr ""
-
-#: templates/homepage.html:10
-msgid "Exchange Rates"
-msgstr "نرخ اسعار"
-
-

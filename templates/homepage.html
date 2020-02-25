@@ -29,9 +29,9 @@
             <td>{{ exchangerate.buy }}</td>
             <td class="d-none d-sm-table-cell">
                 {% if exchangerate.is_today %}
-                    Today, {{ exchangerate.change_date_time|date:"P"}}
+                    {% trans 'Today' %}, {{ exchangerate.change_date_time|date:"H:i:s"}}
                 {% else %}
-                    {{ exchangerate.change_date_time }}
+                    {{ exchangerate.change_date_time|date:"H:i, d-m-Y" }}
                 {% endif %}
             </td>
         </tr>
@@ -52,8 +52,8 @@
                 <div class="float-right">
                   <strong class="d-inline-block mb-2 text-primary">{{ post.title }}</strong>
                   <p class="card-text mb-auto">{{ post.short_description }}</p>
-                  <a href="{% url 'blog:post-detail' post.slug %}" class="stretched-link">Continue reading</a>
-                  <div class="mb-1 text-muted">{{ post.edit_date }}</div>
+                  <a href="{% url 'blog:post-detail' post.slug %}" class="stretched-link"> {% trans 'Continue reading' %} </a>
+                  <div class="mb-1 text-muted">{{ post.edit_date|date:"H:i, d-m-Y" }}</div>
                  </div>
               </div>
               <div class="col-auto d-none d-lg-block">
