@@ -4,9 +4,20 @@
 {% block content %}
 
 <div class="mb-5">
+    <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown link
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div>
 
     <section class="page-section" id="services">
-        <div class="col card mb-3">
+        <div class="container p-3 my-3 border rounded-lg">
             <h2 class="text-center mt-0">{{ currency.designation}} {{ currency.flag}}</h2>
              <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
@@ -50,7 +61,7 @@
     <table class="table table-hover table-striped table-bordered w-100">
 
         <thead>
-            <tr>
+            <tr class="table-primary">
                 <th>{% trans 'Sell' %}</th>
                 <th>{% trans 'Buy' %}</th>
                 <th class="d-none d-sm-table-cell">{% trans 'Date' %}</th>
