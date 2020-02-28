@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-24 23:05+0100\n"
+"POT-Creation-Date: 2020-02-27 16:30+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: blog/templates/blog/post_detail.html:8
+#: blog/templates/blog/post_detail.html:9
 msgid "writen by"
 msgstr ""
 
@@ -26,51 +26,64 @@ msgstr ""
 msgid "All News"
 msgstr ""
 
-#: blog/templates/blog/post_list.html:16 templates/homepage.html:55
+#: blog/templates/blog/post_list.html:16 templates/homepage.html:54
 msgid "Continue reading"
 msgstr ""
 
+#: exchange/templates/exchange/currency_detail.html:25
 #: exchange/templates/exchange/currency_detail.html:44
-msgid "All price updates"
+msgid "Actual rate"
 msgstr ""
 
-#: exchange/templates/exchange/currency_detail.html:55
-#: exchange/templates/exchange/overview.html:19 templates/homepage.html:17
+#: exchange/templates/exchange/currency_detail.html:31
+msgid "High"
+msgstr ""
+
+#: exchange/templates/exchange/currency_detail.html:38
+msgid "low"
+msgstr ""
+
+#: exchange/templates/exchange/currency_detail.html:54
+msgid "All rate updates"
+msgstr ""
+
+#: exchange/templates/exchange/currency_detail.html:65
+#: exchange/templates/exchange/overview.html:17 templates/homepage.html:16
 msgid "Sell"
 msgstr "Verkaufen"
 
-#: exchange/templates/exchange/currency_detail.html:56
-#: exchange/templates/exchange/overview.html:20 templates/homepage.html:18
+#: exchange/templates/exchange/currency_detail.html:66
+#: exchange/templates/exchange/overview.html:18 templates/homepage.html:17
 msgid "Buy"
 msgstr "Kaufen"
 
-#: exchange/templates/exchange/currency_detail.html:57
-#: exchange/templates/exchange/overview.html:21 templates/homepage.html:19
+#: exchange/templates/exchange/currency_detail.html:67
+#: exchange/templates/exchange/overview.html:19 templates/homepage.html:18
 msgid "Date"
 msgstr ""
 
-#: exchange/templates/exchange/currency_detail.html:68
-#: exchange/templates/exchange/overview.html:36 templates/homepage.html:32
+#: exchange/templates/exchange/currency_detail.html:78
+#: exchange/templates/exchange/overview.html:34 templates/homepage.html:31
 msgid "Today"
 msgstr ""
 
-#: exchange/templates/exchange/overview.html:9 templates/homepage.html:10
+#: exchange/templates/exchange/overview.html:9 templates/homepage.html:9
 msgid "Exchange Rates"
 msgstr ""
 
-#: exchange/templates/exchange/overview.html:17 templates/homepage.html:15
+#: exchange/templates/exchange/overview.html:15 templates/homepage.html:14
 msgid "Currency"
 msgstr ""
 
-#: fxrate/settings.py:113 fxrate/settings_git.py:113
+#: fxrate/settings.py:112 fxrate/settings_git.py:113
 msgid "English"
 msgstr ""
 
-#: fxrate/settings.py:114 fxrate/settings_git.py:114
+#: fxrate/settings.py:113 fxrate/settings_git.py:114
 msgid "German"
 msgstr ""
 
-#: fxrate/settings.py:115 fxrate/settings_git.py:115
+#: fxrate/settings.py:114 fxrate/settings_git.py:115
 msgid "Persian"
 msgstr ""
 
@@ -82,7 +95,7 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: templates/base.html:48 templates/homepage.html:46
+#: templates/base.html:48 templates/homepage.html:45
 msgid "News"
 msgstr ""
 

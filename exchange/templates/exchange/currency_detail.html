@@ -22,26 +22,26 @@
              <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
-                        <h3 class="h4 mb-2">درصد تغییر نسبت به روز گذشتهf{% trans '' %}</h3>
+                        <h3 class="h4 mb-2">{% trans 'Actual rate' %}</h3>
                         <p class="text-muted mb-0">!</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
-                        <h3 class="h4 mb-2">پایین ترین قیمت روز {% trans '' %}</h3>
+                        <h3 class="h4 mb-2">{% trans 'High' %}</h3>
                         <p class="text-muted mb-0">.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <i class="fas fa-4x fa-globe text-primary mb-4"></i>
-                        <h3 class="h4 mb-2">بالاترین قیمت روز {% trans 'Highest day rate' %}</h3>
+                        <h3 class="h4 mb-2"> {% trans 'low' %}</h3>
                         <p class="text-muted mb-0">!</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
-                        <h3 class="h4 mb-2">{% trans 'current rate' %} آخرین نرخ</h3>
+                        <h3 class="h4 mb-2">{% trans 'Actual rate' %}</h3>
                         <p class="text-muted mb-0">?</p>
                     </div>
                 </div>
@@ -51,7 +51,7 @@
     {% if currency %}
         <ul class="list-inline">
             <li class="list-inline-item "><span class="h4"> {{ currency.country}} {{ currency.flag}}</span></li>
-            <li class="list-inline-item float-right"><span class="h4">{{ currency.symbol}} {% trans 'All price updates' %} {{ currency.designation}} </span></li>
+            <li class="list-inline-item float-right"><span class="h4">{{ currency.symbol}} {% trans 'All rate updates' %} {{ currency.designation}} </span></li>
         </ul>
     {% else %}
         <h2>Währung nicht gefunden: {{ slug }}</h2><hr>
