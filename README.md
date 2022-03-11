@@ -106,6 +106,8 @@ python3 manage.py loaddata exchange/fixtures/exchange-rate.json
 To make translation files
 ```
 django-admin makemessages --ignore venv  
+django-admin makemessages --locale=de --ignore venv
+django-admin makemessages --locale=fa --ignore venv
 ```
 
 To make changes in translations files available

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-27 16:30+0100\n"
+"POT-Creation-Date: 2022-03-11 02:32+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,97 +30,129 @@ msgstr "همه اخبار"
 msgid "Continue reading"
 msgstr "ادامه مطلب"
 
-#: exchange/templates/exchange/currency_detail.html:25
-#: exchange/templates/exchange/currency_detail.html:44
-msgid "Actual rate"
-msgstr ""
+#: exchange/templates/exchange/currency_detail.html:6
+#: exchange/templates/exchange/overview.html:6 templates/base.html:4
+#: templates/homepage.html:8
+msgid "ltr"
+msgstr "rtl"
 
-#: exchange/templates/exchange/currency_detail.html:31
-msgid "High"
-msgstr ""
+#: exchange/templates/exchange/currency_detail.html:21 templates/base.html:24
+#: templates/base.html:43
+msgid "Sarai Shahzada"
+msgstr "سرای شهزاده"
 
-#: exchange/templates/exchange/currency_detail.html:38
-msgid "low"
-msgstr ""
-
-#: exchange/templates/exchange/currency_detail.html:54
-#, fuzzy
-#| msgid "All price updates"
-msgid "All rate updates"
-msgstr "همه بروز رسانی های قیمت"
-
-#: exchange/templates/exchange/currency_detail.html:65
-#: exchange/templates/exchange/overview.html:17 templates/homepage.html:16
-msgid "Sell"
-msgstr "خرید"
-
-#: exchange/templates/exchange/currency_detail.html:66
-#: exchange/templates/exchange/overview.html:18 templates/homepage.html:17
+#: exchange/templates/exchange/currency_detail.html:21
+#: exchange/templates/exchange/currency_detail.html:67
+#: exchange/templates/exchange/overview.html:17 templates/homepage.html:17
 msgid "Buy"
 msgstr "فروش"
 
-#: exchange/templates/exchange/currency_detail.html:67
-#: exchange/templates/exchange/overview.html:19 templates/homepage.html:18
+#: exchange/templates/exchange/currency_detail.html:25
+msgid "Actual rate"
+msgstr "آخرین نرخ"
+
+#: exchange/templates/exchange/currency_detail.html:31
+msgid "High"
+msgstr "بیشترین"
+
+#: exchange/templates/exchange/currency_detail.html:38
+msgid "Low"
+msgstr "کمترین"
+
+#: exchange/templates/exchange/currency_detail.html:44
+msgid "Open"
+msgstr "شروع بازار"
+
+#: exchange/templates/exchange/currency_detail.html:52
+#: templates/homepage.html:9
+msgid "left"
+msgstr "right"
+
+#: exchange/templates/exchange/currency_detail.html:53
+msgid "AFN"
+msgstr "افغانی"
+
+#: exchange/templates/exchange/currency_detail.html:53
+msgid "to"
+msgstr "به"
+
+#: exchange/templates/exchange/currency_detail.html:66
+#: exchange/templates/exchange/overview.html:16 templates/homepage.html:16
+msgid "Sell"
+msgstr "خرید"
+
+#: exchange/templates/exchange/currency_detail.html:68
+#: exchange/templates/exchange/overview.html:18 templates/homepage.html:18
 msgid "Date"
 msgstr "زمان"
 
-#: exchange/templates/exchange/currency_detail.html:78
-#: exchange/templates/exchange/overview.html:34 templates/homepage.html:31
+#: exchange/templates/exchange/currency_detail.html:79
+#: exchange/templates/exchange/overview.html:33 templates/homepage.html:31
 msgid "Today"
 msgstr "امروز"
 
-#: exchange/templates/exchange/overview.html:9 templates/homepage.html:9
-msgid "Exchange Rates"
-msgstr "نرخ اسعار"
+#: exchange/templates/exchange/overview.html:8 templates/homepage.html:9
+msgid "Sarai Shahzada AFN Rates"
+msgstr "نرخ های افغانی سرای شهزاده"
 
-#: exchange/templates/exchange/overview.html:15 templates/homepage.html:14
+#: exchange/templates/exchange/overview.html:14 templates/homepage.html:14
 msgid "Currency"
 msgstr "ارز خارجی"
 
-#: fxrate/settings.py:112 fxrate/settings_git.py:113
+#: fxrate/settings.py:114
 msgid "English"
 msgstr ""
 
-#: fxrate/settings.py:113 fxrate/settings_git.py:114
+#: fxrate/settings.py:115
 msgid "German"
 msgstr ""
 
-#: fxrate/settings.py:114 fxrate/settings_git.py:115
+#: fxrate/settings.py:116
 msgid "Persian"
 msgstr ""
 
-#: templates/base.html:24 templates/base.html:45
-msgid "Financial Market"
-msgstr "تحلیل بازار مالی - نرخ اسعار سرای شهزاده"
-
-#: templates/base.html:47
+#: templates/base.html:46
 msgid "Home"
-msgstr "خانه"
+msgstr "صفحه اصلی"
 
-#: templates/base.html:48 templates/homepage.html:45
+#: templates/base.html:47 templates/homepage.html:45
 msgid "News"
 msgstr "اخبار"
 
-#: templates/base.html:49
+#: templates/base.html:48
 msgid "Exchange Table"
 msgstr "نرخ اسعار"
 
-#: templates/base.html:85
+#: templates/base.html:84
 msgid "About"
 msgstr ""
 
-#: templates/base.html:88
+#: templates/base.html:87
 msgid "Contact"
 msgstr ""
 
-#: templates/base.html:91
+#: templates/base.html:90
 msgid "Terms"
 msgstr ""
 
-#: templates/base.html:94
+#: templates/base.html:93
 msgid "Cookies"
 msgstr ""
 
-#: templates/base.html:97
+#: templates/base.html:96
 msgid "Back to top"
 msgstr ""
+
+#~ msgid "Kabul"
+#~ msgstr "کابل"
+
+#~ msgid "Rates"
+#~ msgstr "نرخ های"
+
+#~ msgid "Exchange Rates"
+#~ msgstr "نرخ اسعار"
+
+#, fuzzy
+#~| msgid "All price updates"
+#~ msgid "All rate updates"
+#~ msgstr "همه بروز رسانی های قیمت"

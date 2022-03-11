@@ -1,7 +1,7 @@
 {% load static %}
 {% load i18n %}
 <!DOCTYPE html>
-<html lang="fa">
+<html dir="auto" lang="fa">
 
     <head>
         <meta charset="utf-8">
@@ -21,7 +21,7 @@
         {% block javascript %}{% endblock %}
 
         <!-- title and tap icon -->
-        <title>{% block title %}{% trans 'Financial Market' %}{% endblock %}</title>
+        <title>{% block title %}{% trans 'Sarai Shahzada' %}{% endblock %}</title>
         {#<link rel="shortcut icon" type="image/x-icon" href="{% static "img/favicon.ico" %}" sizes="16x16 32x32 48x48 64x64">#}
 
     </head>
@@ -40,15 +40,22 @@
     {% block nav %}
 
         <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-orange border-bottom box-shadow">
-    
-            <a class="text-dark" href="{% url 'homepage' %}"><img src="{% static 'img/logo.svg' %}" height="40px" class="mr-3"></a>
-            <a class="text-dark mr-md-auto font-times nounderline" href="{% url 'homepage' %}"><h1 class="my-0 ">{% trans 'Financial Market' %}</h1></a>
-            <nav class="my-2 my-md-0 mr-md-3">
+            {% comment %} <a class="text-dark font-times nounderline" href="{% url 'homepage' %}"><h1 class="my-0">{% trans 'Sarai Shahzada' %}</h1></a> {% endcomment %}
+            <!-- <a class="text-dark" href="{% url 'homepage' %}"><img src="{% static 'img/logo.svg' %}" height="40px" class="mr-3"></a>
+            <nav class="my-2 my-md-0 mr-md-5">
                 <a class="p-2 text-dark" href="{% url 'homepage' %}">{% trans 'Home' %}</a>
                 <a class="p-2 text-dark" href="{% url 'blog:post-list' %}">{% trans 'News' %}</a>
                 <a class="p-2 text-dark" href="{% url 'exchange:overview' %}">{% trans 'Exchange Table' %}</a>
-            </nav>
-         </div>
+            </nav> -->
+
+            <nav class="my-2 my-md-0 mr-md-5">
+                <img class="center" src="{% static 'img/logo.png' %}" height="50px" class="mr-3">
+                <a class="p-2 text-dark" href="{% url 'homepage' %}">{% trans 'Home' %}   </a>
+                <a class="p-2 text-dark" href="{% url 'exchange:overview' %}">  {% trans 'Exchange Table' %}</a>
+                </nav>
+        
+        </div>
+        
 
     {% endblock %}
 

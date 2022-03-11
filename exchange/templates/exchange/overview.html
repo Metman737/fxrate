@@ -3,16 +3,15 @@
 {% load i18n %}
 {% block content %}
 
-<div class="mb-5">
+<div class="mb-5" dir="{% trans 'ltr' %}">
 
-
-    <h2>{% trans 'Exchange Rates' %}</h2>
-    <table class="table table-hover table-striped table-bordered w-100">
+    <h2>{% trans 'Sarai Shahzada AFN Rates'%}</h2>
+    <table class="table table-hover table-striped table-bordered w-100 text-center">
         <thead>
-        <tr>
-            <th>🏳️</th>
+        <tr style="color: #ACCE22; background-color:#004096">
+            <th></th>
 {#            <th class="d-none d-sm-table-cell">&#x00A4</th>#}
-            <th class="d-none d-sm-table-cell">{% trans 'Currency' %}&#x00A4</th>
+            <th class="d-none d-sm-table-cell">{% trans 'Currency' %}</th>
             <th class="d-table-cell d-sm-none">ISO</th>
             <th>{% trans 'Sell' %}</th>
             <th>{% trans 'Buy' %}</th>

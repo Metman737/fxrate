@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-27 16:30+0100\n"
+"POT-Creation-Date: 2022-03-11 00:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,17 +31,20 @@ msgid "Continue reading"
 msgstr ""
 
 #: exchange/templates/exchange/currency_detail.html:25
-#: exchange/templates/exchange/currency_detail.html:44
 msgid "Actual rate"
-msgstr ""
+msgstr "آخرین نرخ"
 
 #: exchange/templates/exchange/currency_detail.html:31
 msgid "High"
-msgstr ""
+msgstr "بیشترین"
 
 #: exchange/templates/exchange/currency_detail.html:38
 msgid "low"
-msgstr ""
+msgstr "کمترین"
+
+#: exchange/templates/exchange/currency_detail.html:44
+msgid "Open"
+msgstr "شروع بازار"
 
 #: exchange/templates/exchange/currency_detail.html:54
 msgid "All rate updates"
@@ -75,20 +78,24 @@ msgstr ""
 msgid "Currency"
 msgstr ""
 
-#: fxrate/settings.py:112 fxrate/settings_git.py:113
+#: fxrate/settings.py:114
 msgid "English"
 msgstr ""
 
-#: fxrate/settings.py:113 fxrate/settings_git.py:114
+#: fxrate/settings.py:115
 msgid "German"
 msgstr ""
 
-#: fxrate/settings.py:114 fxrate/settings_git.py:115
+#: fxrate/settings.py:116
 msgid "Persian"
 msgstr ""
 
+#: templates/base.html:4 templates/base.html:45 templates/homepage.html:8
+msgid "ltr"
+msgstr "rtl"
+
 #: templates/base.html:24 templates/base.html:45
-msgid "Financial Market"
+msgid "Sarai Shahzada"
 msgstr ""
 
 #: templates/base.html:47
