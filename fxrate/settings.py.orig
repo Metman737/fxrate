@@ -119,7 +119,8 @@ LANGUAGES = (
 LANGUAGE_CODE = 'fa'
 MODELTRANSLATION_LANGUAGES = ('fa', 'en')
 
-TIME_ZONE = 'UTC'
+#TIME_ZONE = 'Asia/KabulUTC'
+TIME_ZONE = 'Asia/Kabul'
 
 USE_I18N = True
 
