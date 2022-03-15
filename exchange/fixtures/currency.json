@@ -1,46 +1,243 @@
-[
-{
-     "model": "exchange.currency",
-     "pk": 1,
-     "fields": {
-          "country": "Europa",
-          "iso": "EUR",
-          "designation": "Euro",
-          "symbol": "\u20ac",
-          "flag": "\uD83C\uDDEA\uD83C\uDDFA"
-     }
-},
-{
-     "model": "exchange.currency",
-     "pk": 2,
-     "fields": {
-          "country": "United States of America",
-          "iso": "USD",
-          "designation": "US-Dollar",
-          "symbol": "$",
-          "flag": "\uD83C\uDDFA\uD83C\uDDF8"
-     }
-},
-{
+[  
+  {
+  "model": "exchange.currency",
+  "pk": 1,
+  "fields": {
+       "country": "Afghanistan",
+       "country_fa":"افغانستان",
+       "country_en":"Afghanistan",
+       "iso": "AFN",
+       "designation": "",
+       "designation_fa": "افغانی",
+       "designation_en": "AFN",
+       "symbol": "",
+       "flag": "\ud83c\udde6\ud83c\uddeb"
+    }
+  },
+  {
+    "model": "exchange.currency",
+    "pk": 2,
+    "fields": {
+      "country": "United States of America",
+      "country_fa": "ایالات متحده آمریکا",
+      "country_en": "United States of America",
+      "iso": "USD",
+      "designation": "US-Dollar",
+      "designation_fa": "دالر امریکایی",
+      "designation_en": "USD",
+      "symbol": "$",
+      "flag": "\uD83C\uDDFA\uD83C\uDDF8"
+    }
+  },
+ {
      "model": "exchange.currency",
      "pk": 3,
      "fields": {
-          "country": "Japan",
-          "iso": "JPY",
-          "designation": "Yen",
-          "symbol": "\u00a5",
-          "flag": "\uD83C\uDDEF\uD83C\uDDF5"
+       "country": "EU",
+       "country_fa": "اتحادیه اروپا",
+       "country_en": "European Union",
+       "iso": "EUR",
+       "designation": "Europ",
+       "designation_fa": "یورو",
+       "designation_en": "Euro",
+       "symbol": "\u20ac",
+       "flag": "\uD83C\uDDEA\uD83C\uDDFA"
      }
+ },
+  {
+    "model": "exchange.currency",
+    "pk": 4,
+    "fields": {
+      "country": "UK",
+      "country_fa": "بریتانیا",
+      "country_en": "United Kingdom",
+      "iso": "UK",
+      "designation": "Pfund Sterling",
+      "designation_fa": "پوند ميكس",
+      "designation_en": "POUND",
+      "symbol": "\u00a3",
+      "flag": "\uD83C\uDDEC\uD83C\uDDE7"
+    }
+
+  },
+  {
+    "model": "exchange.currency",
+     "pk": 5,
+     "fields": {
+       "country": "Australia",
+       "country_fa":"استرالیا",
+       "country_en":"Australia",
+       "iso": "AUS",
+       "designation": "",
+       "designation_fa": "آستراليا",
+       "designation_en": "Australian dollar",
+       "symbol": "$",
+       "flag": "\ud83c\udde6\ud83c\uddfa"
+     }
+  },
+  {
+     "model": "exchange.currency",
+     "pk": 6,
+     "fields": {
+          "country": "Australia",
+          "country_fa":"سوئیس",
+          "country_en":"Switzerland",
+          "iso": "CH",
+          "designation": "",
+          "designation_fa": "فرانک سویس",
+          "designation_en": "Australian dollar",
+          "symbol": "",
+          "flag": "\ud83c\udde8\ud83c\udded"
+     }
+  },
+  {
+     "model": "exchange.currency",
+     "pk": 7,
+     "fields": {
+          "country": "Iran",
+          "country_fa":"ایران",
+          "country_en":"Iran",
+          "iso": "Toman",
+          "designation": "",
+          "designation_fa": " یک میلیون تومان ایران",
+          "designation_en": "Iranian Toman 1m",
+          "symbol": "",
+          "flag": "\ud83c\uddee\ud83c\uddf7"
+     }
+  },
+  {
+     "model": "exchange.currency",
+     "pk": 8,
+     "fields": {
+          "country": "United Arab Emirates",
+          "country_fa":"امارات متحده عربی",
+          "country_en":"United Arab Emirates",
+          "iso": "AED",
+          "designation": "",
+          "designation_fa": "درهم امارات",
+          "designation_en": "Emirati Dirham",
+          "symbol": "",
+          "flag": "\ud83c\udde6\ud83c\uddea"
+     }
+  },
+  {
+    "model": "exchange.currency",
+    "pk": 9,
+    "fields": {
+         "country": "Turkey",
+         "country_fa":"ترکیه",
+         "country_en":"Turkey",
+         "iso": "TRY",
+         "designation": "Turkish Lira ",
+         "designation_fa": "لیر ترکیه",
+         "designation_en": "Turkish Lira",
+         "symbol": "",
+         "flag": "\ud83c\uddf9\ud83c\uddf7"
+    }
+ },
+ {
+   "model": "exchange.currency",
+   "pk": 10,
+   "fields": {
+        "country": "Japan",
+        "country_fa":"ژاپن",
+        "country_en":"Japan",
+        "iso": "JPY",
+        "designation": "Japanese Yen 1K",
+        "designation_fa": "ین ژاپن",
+        "designation_en": "Japanese Yen 1K",
+        "symbol": "",
+        "flag": "\ud83c\uddef\ud83c\uddf5"
+   }
 },
 {
-     "model": "exchange.currency",
-     "pk": 4,
-     "fields": {
-          "country": "United Kingdom",
-          "iso": "UK",
-          "designation": "Pfund Sterling",
-          "symbol": "\u00a3",
-          "flag": "\uD83C\uDDEC\uD83C\uDDE7"
-     }
+  "model": "exchange.currency",
+  "pk": 11,
+  "fields": {
+       "country": "Canada",
+       "country_fa":"کانادا",
+       "country_en":"Canada",
+       "iso": "CAD",
+       "designation": "Canadian Dollar",
+       "designation_fa": "دلار کانادا",
+       "designation_en": "Canadian Dollar",
+       "symbol": "",
+       "flag": "\ud83c\udde8\ud83c\udde6"
+  }
+},
+{
+  "model": "exchange.currency",
+  "pk": 12,
+  "fields": {
+       "country": "Pakistan",
+       "country_fa":"پاکستان",
+       "country_en":"Pakistan",
+       "iso": "PKR",
+       "designation": "Pakistani Rupee 1K",
+       "designation_fa": "روپیه پاکستان",
+       "designation_en": "Pakistani Rupee 1K",
+       "symbol": "",
+       "flag": "\ud83c\uddf5\ud83c\uddf0"
+  }
+},
+{
+  "model": "exchange.currency",
+  "pk": 13,
+  "fields": {
+       "country": "Sweden",
+       "country_fa":"سوئد",
+       "country_en":"Sweden",
+       "iso": "SEK",
+       "designation": "Swedish Krona",
+       "designation_fa": "کرون سوئد",
+       "designation_en": "Swedish Krona",
+       "symbol": "",
+       "flag": "\ud83c\uddf8\ud83c\uddea"
+  }
+},
+{
+  "model": "exchange.currency",
+  "pk": 14,
+  "fields": {
+       "country": "Norway",
+       "country_fa":"نروژ",
+       "country_en":"Norwegian",
+       "iso": "NOK",
+       "designation": "Norwegian Krone",
+       "designation_fa": "کرون نروژ",
+       "designation_en": "Norwegian Krone",
+       "symbol": "",
+       "flag": "\ud83c\uddf3\ud83c\uddf4"
+  }
+},
+{
+  "model": "exchange.currency",
+  "pk": 15,
+  "fields": {
+       "country": "China",
+       "country_fa":"چین",
+       "country_en":"China",
+       "iso": "CNY",
+       "designation": "Chinese Yuan",
+       "designation_fa": "یوان چین",
+       "designation_en": "Chinese Yuan",
+       "symbol": "",
+       "flag": "\ud83c\udde8\ud83c\uddf3"
+  }
+},
+{
+  "model": "exchange.currency",
+  "pk": 16,
+  "fields": {
+       "country": "Qatar",
+       "country_fa":"قطر ",
+       "country_en":"Qatar",
+       "iso": "QAR",
+       "designation": "Qatari riyal",
+       "designation_fa": "ریال قطر ",
+       "designation_en": "Qatari riyal",
+       "symbol": "QR",
+       "flag": "\ud83c\uddf6\ud83c\udde6"
+  }
 }
 ]
